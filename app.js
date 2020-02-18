@@ -85,6 +85,7 @@ passport.deserializeUser(function(id, done) { // Opens fortune cookie and see ms
 // passport.deserializeUser(User.deserializeUser()); // Opens fortune cookie and see msg.
 
 // Google+ is gone so retrieve info from userProfileURL->userInfo
+// Need to create an app on Google Dev Console and create CLIENT_ID and CLIENT_SECRET for oauth.
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
